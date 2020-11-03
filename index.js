@@ -37,8 +37,7 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
             const td4 = document.createElement("td");
             const td5 = document.createElement("td");
             const td6 = document.createElement("td");
-            console.log({ td3 })
-            td3.style.textAlign = "center"
+
             td.innerText = data[i].name;
             td2.innerHTML = `<img  style="width:70px;heigth:70px;" src="${data[i].image}"/>`
             td3.innerText = data[i].species;
