@@ -17,7 +17,7 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
         const thwand = document.createElement("th");
         thImage.innerText = "Imagen";
         thName.innerText = "Nombre";
-        thHouse.innerText ="Casa";
+        thHouse.innerText = "Casa";
         thSpecie.innerText = "Especie";
         thAncestry.innerText = "Ancestros";
         thPatronus.innerText = "Patronus";
@@ -51,7 +51,8 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
             tdPatronus.innerText = data[i].patronus;
             const ul = document.createElement("ul")
             ul.innerHTML = `<li type="square">${ data[i].wand.core ? data[i].wand.core : '<img style="width:25px;border-radius:55%;" src="varitas.jpg" />'}</li>`
-            
+            ul.innerHTML += `<li type="square">${ data[i].wand.length? data[i].wand.length :'<img style="width:25px;border-radius:55%;" src="varitas.jpg" />'}</li>`
+            ul.innerHTML += `<li type="square">${ data[i].wand.wood ? data[i].wand.wood :'<img style="width:25px;border-radius:55%;" src="varitas.jpg" />'}</li>`
 
             tdVarita.appendChild(ul);
             tr.appendChild(tdImagen);
