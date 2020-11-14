@@ -1,9 +1,9 @@
-# Tp Harry Potter
+# TP Harry Potter
 
-Materia: PracticaProfesionalProyecto1
+## Materia: PracticaProfesionalProyecto1
 
 Integrantes:
 - Leonor Perez
 - Nora Barria
-- Arianne
+- Arianne Amalfitani
 - Verónica Bálsamo
