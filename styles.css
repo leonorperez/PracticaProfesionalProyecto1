@@ -16,7 +16,6 @@ h1 {
     font-size: 80px;
     color: aliceblue;
     text-align: center;
-
 }
 
 h2 {
@@ -30,10 +29,11 @@ h2 {
 
 p {
     color: aliceblue;
+    margin: 0% 15% 0 15%;
+    text-align: center;
 }
 
 body {
-    margin: 10px 25% 0 25%;
     background-image: url('fondo.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,8 +41,23 @@ body {
     background-position: center center;
 }
 
+.tabla {
+    margin-left: 14%;
+    width: 70%;
+}
+
 @media only screen and (max-width: 1100px) {
     body {
         margin: 5px 5% 0 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 200%;
+        margin: 0;
+    }
+    .tabla {
+        margin-left: 0;
     }
 }
