@@ -23,8 +23,9 @@ h2 {
     font-style: italic;
     color: aliceblue;
     text-align: center;
-    margin: 0% 15% 0 15%;
+    margin: 0% 40% 5% 40%;
     font-size: x-large;
+    text-align: center;
 }
 
 p {
@@ -59,5 +60,8 @@ body {
     }
     .tabla {
         margin-left: 0;
+    }
+    h2 {
+        margin: 0% 30% 5% 30%;
     }
 }
