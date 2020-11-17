@@ -5,7 +5,7 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
     .then(function(data) {
         const app = document.getElementById("app");
         const table = document.createElement("table");
-        table.className = "table table-dark";
+        table.className = "table table-dark tabla";
         app.appendChild(table);
         const thImage = document.createElement("th");
         const trHead = document.createElement("tr");
