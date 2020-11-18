@@ -31,7 +31,8 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
         trHead.appendChild(thPatronus);
         trHead.appendChild(thwand);
 
-
+        imagenVaritaColumna = '<img style="width:40px;border-radius:55%;" src="varitas.jpg"/>' ;
+        imagenVaritaLista= '<img style="width:25px;border-radius:55%;" src="varitas.jpg" />' ;
 
         for (let i = 0; i < data.length; i++) {
             const tdImagen = document.createElement("td");
@@ -45,14 +46,14 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
 
             tdImagen.innerHTML = `<img  style="width:70px;heigth:70px;" src="${data[i].image}"/>`
             tdName.innerText = data[i].name;
-            tdHouse.innerText = data[i].house;
+            tdHouse.innerHTML = data[i].house ? data [i].house : imagenVaritaColumna ;
             tdSpecies.innerText = data[i].species;
-            tdAncestry.innerText = data[i].ancestry;
-            tdPatronus.innerText = data[i].patronus;
+            tdAncestry.innerHTML = data[i].ancestry ? data [i].ancestry : imagenVaritaColumna;
+            tdPatronus.innerHTML = data[i].patronus ? data[i].patronus : imagenVaritaColumna;
             const ul = document.createElement("ul")
-            ul.innerHTML = `<li type="square">${ data[i].wand.core ? data[i].wand.core : '<img style="width:25px;border-radius:55%;" src="varitas.jpg" />'}</li>`
-            ul.innerHTML += `<li type="square">${ data[i].wand.length? data[i].wand.length :'<img style="width:25px;border-radius:55%;" src="varitas.jpg" />'}</li>`
-            ul.innerHTML += `<li type="square">${ data[i].wand.wood ? data[i].wand.wood :'<img style="width:25px;border-radius:55%;" src="varitas.jpg" />'}</li>`
+            ul.innerHTML = `<li type="square">${ data[i].wand.core ? data[i].wand.core : imagenVaritaLista}</li>`
+            ul.innerHTML += `<li type="square">${ data[i].wand.length? data[i].wand.length :imagenVaritaLista}</li>`
+            ul.innerHTML += `<li type="square">${ data[i].wand.wood ? data[i].wand.wood :imagenVaritaLista}</li>`
 
             tdVarita.appendChild(ul);
             tr.appendChild(tdImagen);
