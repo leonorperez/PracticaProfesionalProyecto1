@@ -7,8 +7,8 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
         const table = document.createElement("table");
         table.className = "table table-dark tabla";
         app.appendChild(table);
-        const thImage = document.createElement("th");
         const trHead = document.createElement("tr");
+        const thImage = document.createElement("th");
         const thName = document.createElement("th");
         const thHouse = document.createElement("th")
         const thSpecie = document.createElement("th");
@@ -35,8 +35,8 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
         imagenVaritaLista= '<img style="width:25px;border-radius:55%;" src="varitas.jpg" />' ;
 
         for (let i = 0; i < data.length; i++) {
-            const tdImagen = document.createElement("td");
             const tr = document.createElement("tr");
+            const tdImagen = document.createElement("td");
             const tdName = document.createElement("td");
             const tdHouse = document.createElement("td");
             const tdSpecies = document.createElement("td");
@@ -64,24 +64,7 @@ window.fetch("https://hp-api.herokuapp.com/api/characters")
             tr.appendChild(tdPatronus);
             tr.appendChild(tdVarita);
             table.appendChild(tr);
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     })
     .catch(function(error) {
         console.log(error);
